@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmoniq AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">Harmoniq AI</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#hero">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#offers">Offres</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#approach">Approche</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#roi">Calculateur ROI</a></li>
+                <li><a href="#needs">Évaluer mes besoins</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Automatisez, Respirez, Travaillez en toute sérénité</h1>
+            <p>Harmoniq AI transforme votre quotidien professionnel grâce à des solutions d’automatisation zen et humaines.</p>
+            <a href="https://calendly.com" class="btn primary-btn">Prendre rendez-vous</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Nos services</h2>
+        <div class="services-grid">
+            <div class="service" data-service="email">Automatisation des emails</div>
+            <div class="service" data-service="calendar">Gestion de calendrier</div>
+            <div class="service" data-service="data">Traitement des données</div>
+            <div class="service" data-service="workflows">Workflows intelligents</div>
+            <div class="service" data-service="support">Service client IA</div>
+            <div class="service" data-service="content">Création de contenu</div>
+            <div class="service" data-service="hr">Gestion RH</div>
+            <div class="service" data-service="quote">Création de devis</div>
+        </div>
+
+        <div id="service-popups">
+            <div class="popup" data-service="email">
+                <h3>Automatisation des emails</h3>
+                <ul>
+                    <li>Envoi automatique des réponses</li>
+                    <li>Segmentation intelligente</li>
+                    <li>Suivi des campagnes</li>
+                </ul>
+            </div>
+            <div class="popup" data-service="calendar">
+                <h3>Gestion de calendrier</h3>
+                <ul>
+                    <li>Prise de rendez-vous simplifiée</li>
+                    <li>Rappels automatiques</li>
+                    <li>Synchronisation multi-appareils</li>
+                </ul>
+            </div>
+            <div class="popup" data-service="data">
+                <h3>Traitement des données</h3>
+                <ul>
+                    <li>Collecte et nettoyage</li>
+                    <li>Analyse automatisée</li>
+                    <li>Reporting clair</li>
+                </ul>
+            </div>
+            <div class="popup" data-service="workflows">
+                <h3>Workflows intelligents</h3>
+                <ul>
+                    <li>Processus sur mesure</li>
+                    <li>Suivi en temps réel</li>
+                    <li>Intégration simplifiée</li>
+                </ul>
+            </div>
+            <div class="popup" data-service="support">
+                <h3>Service client IA</h3>
+                <ul>
+                    <li>Chatbots bienveillants</li>
+                    <li>Disponibilité 24/7</li>
+                    <li>Analyses de satisfaction</li>
+                </ul>
+            </div>
+            <div class="popup" data-service="content">
+                <h3>Création de contenu</h3>
+                <ul>
+                    <li>Rédaction assistée par IA</li>
+                    <li>Optimisation SEO</li>
+                    <li>Calendrier éditorial</li>
+                </ul>
+            </div>
+            <div class="popup" data-service="hr">
+                <h3>Gestion RH</h3>
+                <ul>
+                    <li>Suivi des absences</li>
+                    <li>Onboarding automatisé</li>
+                    <li>Gestion des talents</li>
+                </ul>
+            </div>
+            <div class="popup" data-service="quote">
+                <h3>Création de devis</h3>
+                <ul>
+                    <li>Génération rapide</li>
+                    <li>Personnalisation facile</li>
+                    <li>Suivi des signatures</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="philosophy">
+        <h2>Notre philosophie</h2>
+        <p>Chez Harmoniq AI, nous croyons que la technologie doit être au service de l'humain. Notre approche zen vise à créer un environnement de travail plus serein, où chacun peut se concentrer sur l’essentiel.</p>
+    </section>
+
+    <section id="offers" class="offers">
+        <h2>Nos offres</h2>
+        <div class="offer-cards">
+            <div class="offer">
+                <h3>Zen</h3>
+                <p>1–2 automatisations essentielles</p>
+                <p class="price">297€ / mois</p>
+            </div>
+            <div class="offer">
+                <h3>Sérénité</h3>
+                <p>4–5 automatisations + dashboard + suivi</p>
+                <p class="price">997€ / mois</p>
+            </div>
+            <div class="offer">
+                <h3>Harmonie</h3>
+                <p>Sur-mesure + illimité + API</p>
+                <p class="price">2 997€ / mois</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="roi" class="roi">
+        <h2>Simulateur de ROI</h2>
+        <form id="roi-form">
+            <label>Services à automatiser</label>
+            <input type="text" id="roi-services" placeholder="ex: emails, calendrier">
+            <label>Heures gagnées par semaine</label>
+            <input type="number" id="roi-hours" placeholder="10">
+            <label>Coût horaire moyen (€)</label>
+            <input type="number" id="roi-rate" placeholder="40">
+            <label>Personnes concernées</label>
+            <input type="number" id="roi-people" placeholder="3">
+            <button type="submit" class="btn secondary-btn">Calculer</button>
+        </form>
+        <div id="roi-result"></div>
+    </section>
+
+    <section id="needs" class="needs">
+        <h2>Analyse de vos besoins</h2>
+        <form id="needs-form">
+            <label>Secteur</label>
+            <input type="text" id="need-sector">
+            <label>Nombre de tâches répétitives</label>
+            <input type="number" id="need-tasks">
+            <label>Budget mensuel</label>
+            <input type="number" id="need-budget">
+            <label>Objectif principal</label>
+            <input type="text" id="need-goal">
+            <label>Besoins spécifiques</label>
+            <textarea id="need-details"></textarea>
+            <button type="submit" class="btn secondary-btn">Analyser</button>
+        </form>
+        <div id="needs-result"></div>
+    </section>
+
+    <section id="partners" class="partners">
+        <div class="partner-track">
+            <div class="partner-logo">Notion</div>
+            <div class="partner-logo">Make</div>
+            <div class="partner-logo">Zapier</div>
+            <div class="partner-logo">Airtable</div>
+            <div class="partner-logo">OpenAI</div>
+            <div class="partner-logo">Softr</div>
+            <div class="partner-logo">n8n</div>
+            <div class="partner-logo">Calendly</div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <p>Contact : <a href="mailto:contact@harmoniq.ai">contact@harmoniq.ai</a></p>
+        <p><a href="https://calendly.com">Prendre rendez-vous</a></p>
+    </footer>
+
+    <div id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
